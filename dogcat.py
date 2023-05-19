@@ -1,3 +1,5 @@
+!pip install keras
+!pip install tensorflow
 import streamlit as st
 import tensorflow as tf
 import cv2
@@ -32,4 +34,3 @@ else:
     class_names = ['Cats', 'Dogs']
     string = "OUTPUT: " + class_names[np.argmax(prediction)]
     st.success(string)
-
